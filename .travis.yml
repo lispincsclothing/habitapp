@@ -12,4 +12,4 @@ rvm:
   # Travis supports these versions: http://rubies.travis-ci.org/
 
 before_script:
-  - psql -c 'create database habitapp;' -U postgres
+  - psql -c 'create database habitapp_test;' -U postgres
