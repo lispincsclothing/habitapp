@@ -3,4 +3,5 @@
 2. After add rspec-rails to Gemfile
   1. bundle install
   2. rails g rspec:install
-3. 
+3. Add travis-ci integration
+  1. 
