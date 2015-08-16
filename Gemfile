@@ -53,4 +53,6 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'launchy'
   gem 'database_cleaner'
+  # Diagrama models in UML
+  gem 'railroady'
 end
