@@ -15,8 +15,10 @@
 6. Add gem 'simplecov' (https://github.com/colszowka/simplecov), with additions to spec_helper.rb and .gitignore
   1. `rake spec`
   2. `open coverage/index.html`
-7. Create N-2 relationship between Challenges and Photos `rails g model challenge title:string challenge_description:text forfeit_description:text forfeit_completed:boolean, photo:belongs_to photo:belongs_to number_of_times:integer number_of_days:integer start_date:date end_date:date user:belongs_to`
-  1. Will have to change manually the foreign key for photos to be different (challenge_photo vs forfeit_photo)
+7. Create N-2 relationship between Challenges and Photos `rails g model challenge title:string challenge_description:text forfeit_description:text forfeit_completed:boolean number_of_times:integer number_of_days:integer start_date:date end_date:date user:belongs_to`
+  1. rake db:migrate
 8. add gem 'paperclip' && create photo model
   1. rails g model photo challenge:belongs_to
   2. rails g paperclip photo image
+9. `rails g model challenge title:string challenge_description:text forfeit_description:text forfeit_completed:boolean, photo:belongs_to photo:belongs_to number_of_times:integer number_of_days:integer start_date:date end_date:date user:belongs_to`
+  1. Will have to change manually the foreign key for photos to be different (challenge_photo vs forfeit_photo)
