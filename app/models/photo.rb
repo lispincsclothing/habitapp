@@ -1,3 +1,4 @@
 class Photo < ActiveRecord::Base
-  belongs_to :challenge
+  has_many :challenges, :class_name => 'Challenge', :foreign_key => 'challenge_photo_id'
+  has_many :forfeits, :class_name => 'Challenge', :foreign_key => 'forfeit_photo_id'
 end
