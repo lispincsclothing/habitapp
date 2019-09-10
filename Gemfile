@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Devise for login/security/oauth
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 # Paperclip for handling image uploads
 gem 'paperclip'
 
